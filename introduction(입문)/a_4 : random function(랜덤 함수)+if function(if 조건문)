@@ -1,0 +1,51 @@
+import java.util.Random;  //랜덤함수 라이브러리를 import 시킨다.
+
+public class test {
+    public static void main(String[] args) {
+        Random random_num = new Random(); //Random함수를 적용시킬 random_num 변수로 설정해준다.
+        int number = random_num.nextInt(100); //int형 number에 100까지 정수중 임의의 숫자를 대입시킨다.
+        System.out.println("임의로 선정된 값은 : " + number);
+        
+        /*조건문 사용방법
+        if(조건) {
+          해당 조건 만족시 실행
+         }
+         else if(조건) {
+          위 조건 미만족시 다음 조건이 실행되는 두번째 조건. 해당 두번째 조건 만족시 실행하는 라인
+         }
+         else {
+          위 모든 조건 미만족시 마지막으로 무조건 실행되는 라인
+         }
+        */
+        if(number%2==0) {
+            System.out.println("숫자" + number + "은 짝수 입니다.");
+        }
+        else if(number%2!=0) {
+            System.out.println("숫자" + number + "은 홀수 입니다.");
+        }
+        
+        /*산수 연산
+        a*b = c : 곱셈연산
+        a/b = d : 나눗셈 연산
+        a%b = e : 나머지 몫 값 계산
+        a==b : a와b와 논리적 조건에서 똑같다를 표현하는 것
+        a!=b : a와b와 논리적 조건에서 똑같지않다를 표현하는 것
+        
+        간단한 두개연산 합쳐서 사용하기
+        a+=b : a = a+b;
+        a-=c : a = a-c;
+        a*=d : a = a*d;
+        a/=e : a = a/e;
+        
+        num++;
+        ++num;
+        이 두가지의 차이
+        
+        1. num++ : num변수가 함수에서 사용한뒤에 num = num+1을 시킨다.
+        2. ++num : num변수가 함수에서 사용하기전에 num = num+1을 시킨다.
+        
+        
+        
+        */
+    }
+}
