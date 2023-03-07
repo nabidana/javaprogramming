@@ -1,0 +1,21 @@
+// JAVA SCANNER
+
+import java.util.Scanner
+//1. Java의 라이브러리 Scanner을 import한다.
+
+public Class TestClass {
+
+  public static void main(String[] args) {
+    Scanner writein = new Scanner(System.in); //2. writein 이라는 변수를 입력값을 받는 스캐너로 설정
+    System.out.println("숫자를 입력하여 주세요 : ");
+    int number = writein.nextInt(); //3. int형 number변수에 입력받은 정수값을 저장하는것
+    
+    //입력값을 해당 형으로 저장하는 루트에는 각기 다른 방법을 사용하여 저장한다.
+    // int형 : 변수.nextInt();
+    //double형 : 변수.nextDouble();
+    //boolean형 : 변수.nextBoolean();
+    //공백을 포함하여 한글자를 읽을때 : 변수.next();
+    //줄을 기준으로 한줄을 읽을대 : 변수.nextLine();
+    
+    }
+}
