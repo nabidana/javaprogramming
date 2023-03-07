@@ -1,0 +1,26 @@
+// 자바 variable declaration(변수 선언)
+
+// 자바의 변수 타입
+// java variable type
+
+//1. 정수형
+//1.integer
+int a; //int형(정수)를 a변수라고 설정한다
+a=1;
+
+//2. double 소수형
+double b; //double형(실수)를 b변수라고 설정한다
+b=1.2;
+
+//3. char 문자형
+char c; //char형(문자)를 c변수라고 설정한다
+c='가';
+
+//4. String 문자열형
+//문자열은 char형과 다르게 여러가지 문자를 한번에 저장핟나.
+String d; //String형(문자열)을 d변수라고 설정한다.
+d="가나다라";
+
+//5. boolean 논리형
+boolean e; //boolean형(논리)를 e변수라고 설정한다.
+e= true;
