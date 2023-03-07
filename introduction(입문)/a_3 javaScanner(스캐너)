@@ -19,3 +19,26 @@ public Class TestClass {
     
     }
 }
+
+
+//예제 : 두개의 숫자를 입력 받아서 두 숫자의 합을 구하세요
+import java.util.Scanner
+
+public Class TestClass {
+
+  public static void main(String[] args) {
+    Scanner scan1 = new Scanner(System.in);
+    Scanner scan2 = new Scanner(System.in);
+    System.out.print("1번 숫자를 입력하여 주세요 : ");
+    int num1 = scan1.nextInt();
+    System.out.print("2번 숫자를 입력하여 주세요 : ");
+    int num2 = scan2.nextInt();
+    System.out.println("1번 숫자 " + num1 + " 와 2번 숫자 " + num2 + " 의 합은 " + (num1 + num2) + "입니다.");
+   }
+}
+/*
+결과 : 
+1번 숫자를 입력하세요 :48
+2번 숫자를 입력하여주세요 : 56
+입력하신 숫자 48 과 56 의 합은 104입니다.
+*/
