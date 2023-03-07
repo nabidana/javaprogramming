@@ -1,0 +1,12 @@
+//프로젝트 생성시에는 JAVA version은 항상 JAVA SE-1.8버전으로 설정
+//you
+
+//자바 자동 완성 기능에 대해서
+//자바 자동 완성 기능은 컨트롤+스피에스 키를 주로 사용
+
+// 1. public static void main(String[] args) 는 자동완성을
+//main 입력 후 컨트롤+스페이스 를 통해 가능
+
+//2. System.out.println(""); 은 자동완성을
+// sysout 입력 후 컨트롤+스페이스 를 통해 가능
+
