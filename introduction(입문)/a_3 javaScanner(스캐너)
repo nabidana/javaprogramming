@@ -33,7 +33,8 @@ public Class TestClass {
     int num1 = scan1.nextInt();
     System.out.print("2번 숫자를 입력하여 주세요 : ");
     int num2 = scan2.nextInt();
-    System.out.println("1번 숫자 " + num1 + " 와 2번 숫자 " + num2 + " 의 합은 " + (num1 + num2) + "입니다.");
+    int num3 = num1 + num2;
+    System.out.println("1번 숫자 " + num1 + " 와 2번 숫자 " + num2 + " 의 합은 " + num3 + "입니다."); //되도록이면 연산은 프린트안이 아니라 밖에서 하기!
    }
 }
 /*
