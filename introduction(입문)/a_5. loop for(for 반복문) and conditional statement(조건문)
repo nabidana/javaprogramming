@@ -1,0 +1,30 @@
+//for 문
+//for문은 for (시작지점; 끝나는지점; 시작지점부터 증가값) 문을 통해 반복적으로 동작한다.
+
+for (int i = 0; i < 10; i++) {
+  System.out.println("HELLO" + i);
+}
+
+//if 문
+//if문은 if(조건) { 실행} 문을 통해 조건문으로 동작한다.
+if (i == 0) {
+  System.out.println("HELLO");
+}else if(i == 1) {
+  System.out.println("HELLO2");
+}else {
+  System.out.println("HELLO ELSE");
+}  
+
+String열 입력은
+Scanner변수.nextLine();
+
+String을 int로 변환하는 방법은 다음과 같다.
+Integer.parseInt(String변수);
+
+String을 비교하는 함수는 .equals() 를 사용한다.
+
+String a = "T";
+String b = "T";
+if(b.equals(a)) {
+  System.out.println("OK");
+}  
