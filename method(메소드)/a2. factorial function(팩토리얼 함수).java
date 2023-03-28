@@ -8,7 +8,7 @@ public class QTA4 {
             System.out.println(j + "! 팩토리얼 함수의 값 : " + sum);
             return;
         }
-        sum = sum + i;
+        sum = sum * i;
         i = i - 1;
         j = j + 1;
         facto(i, sum);
