@@ -1,0 +1,87 @@
+package imsi;
+
+public class qwqq {
+
+    public static void generatePermutations(char[] arr, int size, char[] branch, int level, boolean[] visited){
+        /*char[] arr : 문자열배열 ["A", "B", "c"]
+         * int size : arr길이 = 3
+         * char[] branch : 빈 문자열 배열 arr[] = new char[3]
+         * level = -1 -> counting숫자
+         * visited = [False, Flase, Flase]
+         */
+        if(level >= size-1){
+            System.out.println(branch);
+            return;
+        }
+        for(int i = 0 ; i < size; i++){
+            if(!visited[i]){
+                branch[++level] = arr[i];
+                visited[i] = true;
+                generatePermutations(arr, size, branch, level, visited);
+                visited[i]=false;
+                level--;
+            }
+        }
+    }
+
+    public static void combination(char[] arr, int pick, int startidx, char[] output, int numelem){
+        if(numelem==pick){
+            System.out.println(output);
+            return;
+        }
+        for(int i = startidx; i<arr.length; i++){
+            output[numelem++]=arr[i];
+            combination(arr, pick, ++startidx, output, numelem);
+            --numelem;
+        }
+    }
+
+    public static void generatePermutations12(char[] arr, int size, char[] branch, int level, boolean[] visited){
+        /*char[] arr : 문자열배열 ["A", "B", "c"]
+         * int size : arr길이 = 3
+         * char[] branch : 빈 문자열 배열 arr[] = new char[3]
+         * level = -1 -> counting숫자
+         * visited = [False, Flase, Flase]
+         */
+        if(level >= size-1 || level == 3){
+            System.out.println(branch);
+            return;
+        }
+        for(int i = 0 ; i < 5; i++){
+            if(!visited[i]){
+                branch[++level] = arr[i];
+                visited[i] = true;
+                generatePermutations12(arr, size, branch, level, visited);
+                visited[i]=false;
+                level--;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        // String str = "ABC";
+        // int n = str.length();
+        // char[] arr = str.toCharArray();
+        // boolean[] visited = new boolean[n];
+        // for(int i = 0 ; i < n; i++) visited[i] = false;
+        // char[] branch = new char[n];
+        // generatePermutations(arr, n, branch, -1, visited);
+
+        //ABCDE에서 5C3 > 5가지중 3가지경로를 찾는 것들
+        String str = "ABCDE";
+        int n = str.length();
+        char[] arr = str.toCharArray();
+        boolean[] visited = new boolean[n];
+        for(int i = 0 ; i < n; i++) visited[i] = false;
+        char[] branch = new char[n];
+        generatePermutations12(arr, 3, branch, -1, visited);
+
+
+        // String a1 = "ABC";
+        // int a2 = a1.length();
+        // char[] a3 = a1.toCharArray();
+        // boolean[] a4 = new boolean[a2];
+        // for(int i=0;i<a2;i++) a4[i] = false;
+        // char[] a5 = new char[a2];
+        // combination(a3, 2, 0, a5, 0);
+    }
+}
