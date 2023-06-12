@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*{
+	paddming : 0;
+	margin : 0;
+	border : none;
+}
+/*html의 body부분 설정*/
+body{
+	font-size : 14px;
+	font-family: 'Roboto', sans-serif;
+}
+/*html에서 div class가 login-wrapper인것들을 설정한다.*/
+.login-wrapper{
+	width:400px;
+	height:350px;
+	padding:40px;
+	/*box 크기를 결정할 때 기준
+	>content-box : 콘텐츠 영역을 기준으로 크기를 정함
+	>border-box : 테두리를 기준으로 크기를 정함
+	>initial : 기본값으로 설정
+	>inherit 부모 요소 속성값을 상속받음.*/
+	box-sizing:border-box;
+	margin:auto; /*해당 div를 화면 가운데에 정렬시키기 위해서 사용*/
+}
+/*login-wrapper에서 h2태그들의 설정*/
+.login-wrapper > h2{
+    font-size: 24px;
+    color: #6A24FE;
+    /*아래 여백의 크기를 지정해주는것.*/
+    margin-bottom: 20px;
+}
+#create-users > input[type="submit"]{
+	    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    /*테두리를 둥글게 만드는 방법*/
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    color: #fff;
+    font-size: 16px;
+    background-color: #6A24FE;
+    margin-top: 20px;
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    /*테두리를 둥글게 만드는 방법*/
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+#login-form > input::placeholder{
+    color: #D2D2D2;
+    /*글씨를 연하게 해주는 색깔*/
+}
+#login-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #6A24FE;
+    margin-top: 20px;
+}
+#login-form > input[type="checkbox"]{
+	/*속성 요소를 어떻게 보여줄지 결정
+	>none : 보이지 않음
+	>block : 블록 박스
+	>inline : 인라인 박스
+	>inline-block : block과 inline의 중간 형태*/
+    display: none;
+}
+#login-form > label{
+    color: #999999;
+}
+#login-form input[type="checkbox"] + label{
+    cursor: pointer;
+    padding-left: 26px;
+    background-image: url("checkbox.png");
+    /*반복 여부 결정
+    >repeat : 가로,세로 방향으로 반복한다
+    >repeat-x : 가로 방향으로 반복한다
+    >repeat-y : 세로 방향으로 반복한다
+    >no-repeat : 반복하지 않는다
+    >initial : 기본값으로 설정
+    >inherit : 부모 속성 상속받음*/
+    background-repeat: no-repeat;
+    /*배경 이미지 가로 세로 크기 정하기
+    >auto : 이미지 크기 유지
+    >length : 가로/크기에맞게 자동으로 정해짐
+    >cover : 배경을 요소에 다 채울수있께 이미지를 확대/축소 함
+    >contain : cover에서 최대 크기로 이미지를 확대/축소 함*/
+    background-size: contain;
+}
+#login-form input[type="checkbox"]:checked + label{
+    background-image: url("checkbox-active.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
